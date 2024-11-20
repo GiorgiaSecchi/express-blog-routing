@@ -11,16 +11,20 @@ const posts = require("../db/posts-db.js");
 //* INDEX
 
 router.get("/", (req, res) => {
-  res.send("Visualizzare la lista di tutti i posts");
+  res.send("Visualizza la lista di tutti i posts");
 });
 
 //* SHOW
 
 router.get("/:id", (req, res) => {
-  res.send("Visualizzare un post");
+  res.send("Visualizza un post");
 });
 
-//*
+//* STORE
+
+router.post("/", (req, res) => {
+  res.send("Crea un nuovo post");
+});
 
 // router.get
 
