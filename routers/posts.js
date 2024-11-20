@@ -38,6 +38,10 @@ router.patch("/:id", (req, res) => {
   res.send("Modifica parzialmente un post");
 });
 
-//*
+//* DESTROY
+
+router.delete("/:id", (req, res) => {
+  res.send("Elimina un post");
+});
 
 module.exports = router;
