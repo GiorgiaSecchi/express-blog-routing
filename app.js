@@ -6,12 +6,11 @@ const postsRouter = require("./routers/posts");
 app.use("/posts", postsRouter);
 app.use(express.static("public"));
 
-// app.get("/", (req, res) => {
-//   const text = "Server del mio blog";
-//   res.json(text);
-//   // res.type("json").send(text) --> res.json(text)
-//   // res.send(text);
-// });
+app.get("/", (req, res) => {
+  const text = "Server del mio blog";
+  res.send(text);
+  // res.type("json").send(text) --> res.json(text)
+});
 
 app.get("/bacheca", (req, res) => {
   const tag = req.query.tag;
