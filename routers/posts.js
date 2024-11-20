@@ -32,4 +32,12 @@ router.put("/:id", (req, res) => {
   res.send("Modifica interamente un post");
 });
 
+//* MODIFY
+
+router.patch("/:id", (req, res) => {
+  res.send("Modifica parzialmente un post");
+});
+
+//*
+
 module.exports = router;
