@@ -1,6 +1,7 @@
 //# ARRAY 5 POST
 const posts = [
   {
+    id: 1,
     titolo: "Ciambellone",
     contenuto: "La ricetta",
     immagine: "/img/ciambellone.jpeg",

@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/bacheca", (req, res) => {
-  const tag = req.query.tag;
+  const tag = req.params.tag;
   if (tag) {
     const filteredPosts = posts.filter((post) => {
       return post.tags.includes(tag.toLowerCase());

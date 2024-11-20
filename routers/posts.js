@@ -18,7 +18,12 @@ router.get("/", (req, res) => {
 //* SHOW
 
 router.get("/:id", (req, res) => {
-  res.send("Visualizza un post");
+  //   res.send("Visualizza un post");
+  // res.json(`Visualizza un post: ${id}`);
+
+  const id = parseInt(req.params.id);
+  const post = posts.find((post) => post.id === id);
+  res.json(post);
 });
 
 //* STORE
