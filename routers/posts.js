@@ -11,7 +11,8 @@ const posts = require("../db/posts-db.js");
 //* INDEX
 
 router.get("/", (req, res) => {
-  res.send("Visualizza la lista di tutti i posts");
+  //   res.send("Visualizza la lista di tutti i posts");
+  res.json(posts);
 });
 
 //* SHOW
