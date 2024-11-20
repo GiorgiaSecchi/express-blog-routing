@@ -26,6 +26,10 @@ router.post("/", (req, res) => {
   res.send("Crea un nuovo post");
 });
 
-// router.get
+//* UPDATE
+
+router.put("/:id", (req, res) => {
+  res.send("Modifica interamente un post");
+});
 
 module.exports = router;
